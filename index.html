@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Raleway:700" rel="stylesheet">
   
   <title>Frontend Mentor | Landing page with detailed integrations section</title>
 
@@ -22,11 +24,42 @@
       list-style: none;
     }
 
+    h1 {
+      font-family: 'Raleway', sans-serif;
+      font-weight: 700;
+    }
+
+    p, li, h3, h4, .nav {
+      font-family: 'Open Sans', sans-serif;
+    }
+
+    p {
+      font-weight: 400;
+      color: hsl(0, 0%, 50%);
+    }
+
+    h3 {
+      font-weight: 700;
+      color: hsl(243, 87%, 12%)
+    }
+
+    h4 {
+      font-weight: 600;
+      color: hsl(0, 0%, 17%);
+    }
+
+    button {
+      background-color: hsl(163, 95%, 43%);
+      border: 0;
+      border-radius: 3px;
+    }
+
     .container {
       background-image: url("./images/bg-intro-mobile.svg");
       background-repeat: no-repeat;
       background-position: right top;
       background-size: 300px;
+      padding: 40px;
       display: grid;
     }
 
@@ -35,8 +68,19 @@
       grid-template-columns: repeat(4, 1fr);
     }
 
+    .nav, .nav button {
+      color: white;
+      /* font-size: 1em; */
+    }
+
     .nav > .logo {
       grid-column: span 2;
+    }
+
+    .footer {
+      background-color: hsl(243, 87%, 12%);
+      padding: 30px;
+      color: white;
     }
   </style>
 </head>
@@ -92,37 +136,37 @@
       <div>
         <img src="./images/logo-slack.png" alt="slack logo">
         <h3>Slack</h3>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque id varius eros, vel pharetra est.
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque id varius eros, vel pharetra est.</p>
       </div>
 
       <div>
         <img src="./images/logo-gsuite.png" alt="slack logo">
         <h3>GSuite</h3>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque id varius eros, vel pharetra est.
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque id varius eros, vel pharetra est.</p>
       </div>
 
       <div>
         <img src="./images/logo-trello.png" alt="slack logo">
         <h3>Trello</h3>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque id varius eros, vel pharetra est.
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque id varius eros, vel pharetra est.</p>
       </div>
 
       <div>
         <img src="./images/logo-asana.png" alt="slack logo">
         <h3>Asana</h3>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque id varius eros, vel pharetra est.
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque id varius eros, vel pharetra est.</p>
       </div>
 
       <div>
         <img src="./images/logo-salesforce.png" alt="slack logo">
         <h3>Salesforce</h3>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque id varius eros, vel pharetra est.
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque id varius eros, vel pharetra est.</p>
       </div>
 
       <div>
         <img src="./images/logo-typeform.png" alt="slack logo">
         <h3>Typeform</h3>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque id varius eros, vel pharetra est.
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque id varius eros, vel pharetra est.</p>
       </div>
     </div>
     
@@ -134,49 +178,49 @@
     
       <button>Get Started</button>
     </div>
+  </div>
 
-    <div class="footer">
-      <img src="./images/logo.svg" alt="logo" class="logo">
-      <p>Receive updates from us, including tips and tricks on how to improve your workflow.</p>
+  <div class="footer">
+    <img src="./images/logo.svg" alt="logo" class="logo">
+    <p>Receive updates from us, including tips and tricks on how to improve your workflow.</p>
 
-      <input type="text" name="newsletter-input" id="newsletter-input">
-      <button>Join</button>
-    
-      <div>
-        <img src="./images/icon-phone.svg" alt="phone-icon">
-        Phone: +1-543-123-4567
-      </div>
-    
-      <div>
-          <img src="./images/icon-email.svg" alt="email-icon">
-        example@fylo.com
-      </div>
-    
-      <ul>
-        <li><b>Fylo</b></li>
-        <li>Desktop App</li>
-        <li>Mobile App</li>
-        <li>Pricing</li>
-        <li>Feature</li>
-      </ul>
-
-      <ul>
-        <li><b>Company</b></li>
-        <li>About Us</li>
-        <li>Jobs</li>
-        <li>Press</li>
-        <li>Blog</li>
-      </ul>
-
-      <ul>
-        <li><b>Support</b></li>
-        <li>Contact Us</li>
-        <li>Terms</li>
-        <li>Privacy</li>
-      </ul>
+    <input type="text" name="newsletter-input" id="newsletter-input">
+    <button>Join</button>
+  
+    <div>
+      <img src="./images/icon-phone.svg" alt="phone-icon">
+      Phone: +1-543-123-4567
     </div>
   
+    <div>
+        <img src="./images/icon-email.svg" alt="email-icon">
+      example@fylo.com
+    </div>
+  
+    <ul>
+      <li><b>Fylo</b></li>
+      <li>Desktop App</li>
+      <li>Mobile App</li>
+      <li>Pricing</li>
+      <li>Feature</li>
+    </ul>
+
+    <ul>
+      <li><b>Company</b></li>
+      <li>About Us</li>
+      <li>Jobs</li>
+      <li>Press</li>
+      <li>Blog</li>
+    </ul>
+
+    <ul>
+      <li><b>Support</b></li>
+      <li>Contact Us</li>
+      <li>Terms</li>
+      <li>Privacy</li>
+    </ul>
   </div>
+  
   <footer>
     <p class="attribution">
       This page started life as a challenge on <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a> 🎉

@@ -12,6 +12,19 @@
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
+
+    .container {
+      display: grid;
+    }
+
+    .nav {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    .nav > .logo {
+      grid-column: span 2;
+    }
   </style>
 </head>
 <body>
@@ -19,8 +32,9 @@
 
   
     <div class="nav">
-      Sign In
-      Sign Up
+      <img src=".\images\logo.svg" alt="logo" class="logo">
+      <div>Sign In</div>
+      <button>Sign Up</button>
     </div>
 
     <div class="heading-content">

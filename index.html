@@ -15,72 +15,80 @@
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
 
-    body, html {
-      padding: 0;
-      margin: 0;
-    }
+    @media (max-width: 991.98px) {
 
-    ul {
-      list-style: none;
-    }
+      body {
+        padding: 0;
+        margin: 0;
+      }
 
-    h1 {
-      font-family: 'Raleway', sans-serif;
-      font-weight: 700;
-    }
+      ul {
+        list-style: none;
+      }
 
-    p, li, h3, h4, .nav {
-      font-family: 'Open Sans', sans-serif;
-    }
+      h1 {
+        font-family: 'Raleway', sans-serif;
+        font-weight: 700;
+      }
 
-    p {
-      font-weight: 400;
-      color: hsl(0, 0%, 50%);
-    }
+      p, li, h3, h4, .nav {
+        font-family: 'Open Sans', sans-serif;
+      }
 
-    h3 {
-      font-weight: 700;
-      color: hsl(243, 87%, 12%)
-    }
+      p {
+        font-weight: 400;
+        color: hsl(0, 0%, 50%);
+      }
 
-    h4 {
-      font-weight: 600;
-      color: hsl(0, 0%, 17%);
-    }
+      h3 {
+        font-weight: 700;
+        color: hsl(243, 87%, 12%)
+      }
 
-    button {
-      background-color: hsl(163, 95%, 43%);
-      border: 0;
-      border-radius: 3px;
-    }
+      h4 {
+        font-weight: 600;
+        color: hsl(0, 0%, 17%);
+      }
 
-    .container {
-      background-image: url("./images/bg-intro-mobile.svg");
-      background-repeat: no-repeat;
-      background-position: right top;
-      background-size: 300px;
-      padding: 40px;
-      display: grid;
-    }
+      button {
+        background-color: hsl(163, 95%, 43%);
+        border: 0;
+        border-radius: 3px;
+      }
 
-    .nav {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-    }
+      .container {
+        background-image: url("./images/bg-intro-mobile.svg");
+        background-repeat: no-repeat;
+        background-position: right top;
+        background-size: 300px;
+        padding: 40px;
+        display: grid;
+        grid-template-columns: 1fr;
+      }
 
-    .nav, .nav button {
-      color: white;
-      /* font-size: 1em; */
-    }
+      .nav {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+      }
 
-    .nav > .logo {
-      grid-column: span 2;
-    }
+      .nav, .nav button {
+        color: white;
+        /* font-size: 1em; */
+      }
 
-    .footer {
-      background-color: hsl(243, 87%, 12%);
-      padding: 30px;
-      color: white;
+      .nav > .logo {
+        grid-column: span 2;
+      }
+
+      .main-illustration {
+        width: 100%;
+      }
+
+      .footer {
+        background-color: hsl(243, 87%, 12%);
+        padding: 30px;
+        color: white;
+      }
     }
   </style>
 </head>
@@ -95,7 +103,7 @@
     </div>
 
     <div class="heading-content">
-      <img src="./images/illustration-main.svg" alt="">
+      <img src="./images/illustration-main.svg" alt="main-illustration" class="main-illustration">
       <h1>All your files in one secure location, accessible anywhere.</h1>
 
       <p>Fylo stores all your most important files in one secure location. 

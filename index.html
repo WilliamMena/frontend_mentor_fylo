@@ -39,16 +39,20 @@
         font-weight: 400;
         color: hsl(0, 0%, 50%);
         font-size: .9em;
+        line-height: 1.5;
       }
 
       h3 {
         font-weight: 700;
-        color: hsl(243, 87%, 12%)
+        color: hsl(243, 87%, 12%);
+        line-height: 1.55;
       }
 
       h4 {
         font-weight: 600;
         color: hsl(0, 0%, 17%);
+        letter-spacing: 0.3px;
+        line-height: 1.5;
       }
 
     @media (max-width: 991.98px) {
@@ -63,7 +67,7 @@
         background-image: url("./images/bg-intro-mobile.svg");
         background-repeat: no-repeat;
         background-position: right top;
-        background-size: 240px;
+        background-size: 64%;
         padding: 29px 24px 28px 24px;
         display: grid;
         grid-template-columns: 1fr;
@@ -116,7 +120,6 @@
 
       .heading-content > p {
         padding-top: 3px;
-        line-height: 1.5;
       }
 
       .heading-content > button {
@@ -128,6 +131,55 @@
         padding-left: 12px;
         letter-spacing: 1px;
       }
+
+      .content-1 {
+        margin-top: 223px;
+        text-align: center;
+      }
+
+      .content-1 h3 {
+        padding: 0 60px 0 60px;
+      }
+
+      .content-1 > p {
+        margin-top: 30px;
+      }
+
+      .content-1 > .devices {
+        margin-top: 102px;
+      }
+
+      .content-1 > .devices img {
+        height: 110px;
+      }
+
+      .content-1 > .devices h4 {
+        margin-top: 34px;
+      }
+
+      .content-1 > .security {
+        margin-top: 112px;
+      }
+
+      .content-1 > .security img {
+        height: 120px;
+      }
+
+      .content-1 > .security h4 {
+        margin-top: 32px;
+      }
+
+      .content-1 > .collaboration {
+        margin-top: 119px;
+      }
+
+      .content-1 > .collaboration img {
+        height: 98px;
+      }
+
+      .content-1 > .collaboration h4 {
+        margin-top: 39px;
+      }      
 
       .footer {
         background-color: hsl(243, 87%, 12%);
@@ -166,15 +218,15 @@
     
       <div class="devices">
         <img src="./images/icon-devices.svg" alt="devices">
-        <h4>All platforms, all devices, all your files</h4>
+        <h4>All platforms, all <br/> devices, all your files</h4>
       </div>
 
-      <div class="devices">
+      <div class="security">
         <img src="./images/icon-security.svg" alt="devices">
         <h4>Security you can trust</h4>
       </div>
 
-      <div class="devices">
+      <div class="collaboration">
         <img src="./images/icon-collaboration.svg" alt="devices">
         <h4>Real-time collaboration</h4>
       </div>

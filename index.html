@@ -7,7 +7,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Raleway:700" rel="stylesheet">
-  
+
   <title>Frontend Mentor | Landing page with detailed integrations section</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -154,7 +154,7 @@
       }
 
       .content-1 > .devices h4 {
-        margin-top: 34px;
+        margin-top: 32px;
       }
 
       .content-1 > .security {
@@ -166,7 +166,7 @@
       }
 
       .content-1 > .security h4 {
-        margin-top: 32px;
+        margin-top: 29px;
       }
 
       .content-1 > .collaboration {
@@ -179,33 +179,173 @@
 
       .content-1 > .collaboration h4 {
         margin-top: 39px;
-      }      
+      }
 
       .connected-apps {
         margin-top: 296px;
         text-align: center;
       }
 
-      .connected-apps h3 {
+      .connected-apps > h3 {
         padding: 0 30px 0 30px;
       }
 
-      .connected-apps p {
+      .connected-apps > p {
         margin-top: 40px;
       }
 
-      .footer {
-        background-color: hsl(243, 87%, 12%);
-        padding: 30px;
-        color: white;
+      .logo-box {
+        width: 218px;
+        height: 110px;
+        margin-left: auto;
+        margin-right: auto;
       }
+
+      .description-box {
+        width: 218px;
+        height: 176px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .logo-box, .description-box {
+        -webkit-box-shadow: 0px 0px 22px -10px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 0px 22px -10px rgba(0,0,0,0.75);
+        box-shadow: 0px 0px 22px -10px rgba(0,0,0,0.75);
+      }
+
+      .slack-container {
+        margin-top: 57px;
+      }
+
+      .slack-container h3 {
+        margin-top: 3px;
+        padding-top: 10px;
+      }
+
+      .slack-container p {
+        margin-top: -8px;
+      }
+
+      .gsuite-container {
+        margin-top: 30px;
+      }
+
+      .gsuite-container h3 {
+        margin-top: 1px;
+        padding-top: 10px;
+      }
+
+      .gsuite-container p {
+        margin-top: -8px;
+      }
+
+      .slack, .gsuite {
+        margin: 39px;
+        width: 56%;
+      }
+
+      .trello {
+       margin: 39px;
+       width: 53%;
+     }
+
+     .trello-container {
+       margin-top: 27px;
+     }
+
+     .trello-container h3 {
+       margin-top: 1px;
+       padding-top: 10px;
+       font-size: 1.4em;
+     }
+
+     .trello-container p {
+       margin-top: -15px;
+     }
+
+     .trello-container .description-box {
+       padding-bottom: 1px;
+     }
+
+     .asana {
+      margin: 20px;
+      width: 46%;
+    }
+
+     .asana-container {
+       margin-top: 32px;
+     }
+
+     .asana-container h3 {
+       margin-top: 1px;
+       padding-top: 11px;
+     }
+
+     .asana-container p {
+       margin-top: -8px;
+     }
+
+     .salesforce {
+      margin: 20px;
+      width: 46%;
+    }
+
+     .salesforce-container {
+       margin-top: 29px;
+     }
+
+     .salesforce-container h3 {
+       margin-top: 1px;
+       padding-top: 11px;
+     }
+
+     .salesforce-container p {
+       margin-top: -8px;
+     }
+
+     .salesforce-container .description-box {
+       padding-bottom: 3px;
+     }
+
+     .typeform {
+      margin: 38px;
+      width: 54%;
+    }
+
+     .typeform-container {
+       margin-top: 29px;
+     }
+
+     .typeform-container h3 {
+       margin-top: 1px;
+       padding-top: 11px;
+     }
+
+     .typeform-container p {
+       margin-top: -8px;
+     }
+
+     .typeform-container .logo-box {
+       margin-bottom: -1px;
+     }
+
+     .typeform-container .description-box {
+       padding-bottom: 3px;
+     }
+
+    .footer {
+      background-color: hsl(243, 87%, 12%);
+      padding: 30px;
+      color: white;
+    }
     }
   </style>
 </head>
 <body>
   <div class="container">
 
-  
+
     <div class="nav">
       <img src="./images/logo.svg" alt="logo" class="logo">
       <div class="sign-in">Sign In</div>
@@ -216,19 +356,19 @@
       <img src="./images/illustration-main.svg" alt="main-illustration" class="main-illustration">
       <h1>All your files in one secure location, accessible anywhere.</h1>
 
-      <p>Fylo stores all your most important files in one secure location. 
-      Access them wherever you need, share and collaborate with friends, 
+      <p>Fylo stores all your most important files in one secure location.
+      Access them wherever you need, share and collaborate with friends,
       family and co-workers.</p>
-    
+
       <button>Get Started</button>
     </div>
 
     <div class="content-1">
       <h3>Stay productive, wherever you are</h3>
 
-      <p>Never let location be an issue when accessing your files. Fylo has you 
+      <p>Never let location be an issue when accessing your files. Fylo has you
       covered for all of your file storage needs.</p>
-    
+
       <div class="devices">
         <img src="./images/icon-devices.svg" alt="devices">
         <h4>All platforms, all <br/> devices, all your files</h4>
@@ -244,56 +384,81 @@
         <h4>Real-time collaboration</h4>
       </div>
     </div>
-  
+
     <div class="connected-apps">
       <h3>Connect with the apps you use everyday</h3>
 
-      <p>Fylo seamlessly integrates with hundreds of apps, meaning you can access and 
+      <p>Fylo seamlessly integrates with hundreds of apps, meaning you can access and
       work on your files from the apps you already know and love.</p>
-      
-      <div>
-        <img src="./images/logo-slack.png" alt="slack logo">
-        <h3>Slack</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque id varius eros, vel pharetra est.</p>
+
+      <div class="slack-container">
+        <div class="logo-box">
+          <img src="./images/logo-slack.png" alt="slack-logo" class="slack logo">
+        </div>
+        <div class="description-box">
+          <h3>Slack</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque id varius eros, vel pharetra est.</p>
+        </div>
       </div>
 
-      <div>
-        <img src="./images/logo-gsuite.png" alt="slack logo">
-        <h3>GSuite</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque id varius eros, vel pharetra est.</p>
+      <div class="gsuite-container">
+        <div class="logo-box">
+          <img src="./images/logo-gsuite.png" alt="google-logo" class="gsuite logo">
+        </div>
+        <div class="description-box">
+          <h3>GSuite</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque id varius eros, vel pharetra est.</p>
+        </div>
       </div>
 
-      <div>
-        <img src="./images/logo-trello.png" alt="slack logo">
-        <h3>Trello</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque id varius eros, vel pharetra est.</p>
+      <div class="trello-container">
+        <div class="logo-box">
+          <img src="./images/logo-trello.png" alt="trello-logo" class="trello logo">
+        </div>
+        <div class="description-box">
+          <h3>Trello</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque id varius eros, vel pharetra est.</p>
+        </div>
       </div>
 
-      <div>
-        <img src="./images/logo-asana.png" alt="slack logo">
-        <h3>Asana</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque id varius eros, vel pharetra est.</p>
+      <div class="asana-container">
+        <div class="logo-box">
+          <img src="./images/logo-asana.png" alt="asana-logo" class="asana logo">
+        </div>
+        <div class="description-box">
+          <h3>Asana</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque id varius eros, vel pharetra est.</p>
+        </div>
       </div>
 
-      <div>
-        <img src="./images/logo-salesforce.png" alt="slack logo">
-        <h3>Salesforce</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque id varius eros, vel pharetra est.</p>
+      <div class="salesforce-container">
+        <div class="logo-box">
+          <img src="./images/logo-salesforce.png" alt="salesforce-logo" class="salesforce logo">
+        </div>
+        <div class="description-box">
+          <h3>Salesforce</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque id varius eros, vel pharetra est.</p>
+        </div>
       </div>
 
-      <div>
-        <img src="./images/logo-typeform.png" alt="slack logo">
-        <h3>Typeform</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque id varius eros, vel pharetra est.</p>
+      <div class="typeform-container">
+        <div class="logo-box">
+          <img src="./images/logo-typeform.png" alt="typeform-logo" class="typeform logo">
+        </div>
+        <div class="description-box">
+          <h3>Typeform</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque id varius eros, vel pharetra est.</p>
+        </div>
       </div>
+
     </div>
-    
+
     <div class="register-content">
       <h3>Start using Fylo today</h3>
 
-      <p>It only takes a minute to sign up and our free starter tier is extremely generous. If you have any 
+      <p>It only takes a minute to sign up and our free starter tier is extremely generous. If you have any
       questions, our support team would be happy to help you.</p>
-    
+
       <button>Get Started</button>
     </div>
   </div>
@@ -304,17 +469,17 @@
 
     <input type="text" name="newsletter-input" id="newsletter-input">
     <button>Join</button>
-  
+
     <div>
       <img src="./images/icon-phone.svg" alt="phone-icon">
       Phone: +1-543-123-4567
     </div>
-  
+
     <div>
         <img src="./images/icon-email.svg" alt="email-icon">
       example@fylo.com
     </div>
-  
+
     <ul>
       <li><b>Fylo</b></li>
       <li>Desktop App</li>
@@ -338,7 +503,7 @@
       <li>Privacy</li>
     </ul>
   </div>
-  
+
   <footer>
     <p class="attribution">
       This page started life as a challenge on <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a> 🎉

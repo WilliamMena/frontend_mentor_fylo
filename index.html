@@ -12,334 +12,357 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+  .attribution { font-size: 11px; text-align: center; }
+  .attribution a { color: hsl(228, 45%, 44%); }
 
-    body {
-        padding: 0;
-        margin: 0;
-      }
+  body {
+    padding: 0;
+    margin: 0;
+  }
 
-      ul {
-        list-style: none;
-      }
+  ul {
+    list-style: none;
+  }
 
-      h1 {
-        font-family: 'Raleway', sans-serif;
-        font-weight: 700;
-        font-size: 1.8em;
-        line-height: 1.1;
-      }
+  h1 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 1.8em;
+    line-height: 1.1;
+  }
 
-      p, li, h3, h4, .nav {
-        font-family: 'Open Sans', sans-serif;
-      }
+  p, li, h3, h4, .nav {
+    font-family: 'Open Sans', sans-serif;
+  }
 
-      p {
-        font-weight: 400;
-        color: hsl(0, 0%, 50%);
-        font-size: .9em;
-        line-height: 1.5;
-      }
+  p {
+    font-weight: 400;
+    color: hsl(0, 0%, 50%);
+    font-size: .9em;
+    line-height: 1.5;
+  }
 
-      h3 {
-        font-weight: 700;
-        color: hsl(243, 87%, 12%);
-        line-height: 1.55;
-      }
+  h3 {
+    font-weight: 700;
+    color: hsl(243, 87%, 12%);
+    line-height: 1.55;
+  }
 
-      h4 {
-        font-weight: 600;
-        color: hsl(0, 0%, 17%);
-        letter-spacing: 0.3px;
-        line-height: 1.5;
-      }
+  h4 {
+    font-weight: 600;
+    color: hsl(0, 0%, 17%);
+    letter-spacing: 0.3px;
+    line-height: 1.5;
+  }
 
-    @media (max-width: 991.98px) {
+  @media (max-width: 991.98px) {
 
-      button {
-        background-color: hsl(163, 95%, 43%);
-        border: 0;
-        border-radius: 3px;
-      }
+    button {
+      background-color: hsl(163, 95%, 43%);
+      border: 0;
+      border-radius: 3px;
+    }
 
-      .container {
-        background-image: url("./images/bg-intro-mobile.svg");
-        background-repeat: no-repeat;
-        background-position: right top;
-        background-size: 64%;
-        padding: 29px 24px 28px 24px;
-        display: grid;
-        grid-template-columns: 1fr;
-      }
+    .container {
+      background-image: url("./images/bg-intro-mobile.svg");
+      background-repeat: no-repeat;
+      background-position: right top;
+      background-size: 64%;
+      padding: 29px 24px 28px 24px;
+      display: grid;
+      grid-template-columns: 1fr;
+    }
 
-      .nav {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        align-items: center;
-        /* height: 100px; */
-      }
+    .nav {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      align-items: center;
+      /* height: 100px; */
+    }
 
-      .nav, button {
-        color: white;
-        font-size: .9em;
-      }
+    .nav, button {
+      color: white;
+      font-size: .9em;
+    }
 
-      .nav .sign-in {
-        padding-left: 17px;
-        padding-top: 3px;
-        font-size: .9em;
-      }
+    .nav .sign-in {
+      padding-left: 17px;
+      padding-top: 3px;
+      font-size: .9em;
+    }
 
-      .nav button {
-        height: 32px;
-        width: 96px;
-      }
+    .nav button {
+      height: 32px;
+      width: 96px;
+    }
 
-      .nav > .logo {
-        grid-column: span 2;
-        /* width: 53%; */
-        width: 88px;
-      }
+    .nav > .logo {
+      grid-column: span 2;
+      /* width: 53%; */
+      width: 88px;
+    }
 
-      .heading-content {
-        text-align: center;
-      }
+    .heading-content {
+      text-align: center;
+    }
 
-      .heading-content > .main-illustration {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 72%;
-        padding-top: 70px;
-      }
+    .heading-content > .main-illustration {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 72%;
+      padding-top: 70px;
+    }
 
-      .heading-content > h1 {
-        padding-top: 16px;
-      }
+    .heading-content > h1 {
+      padding-top: 16px;
+    }
 
-      .heading-content > p {
-        padding-top: 3px;
-      }
+    .heading-content > p {
+      padding-top: 3px;
+    }
 
-      .heading-content > button {
-        margin-top: 20px;
-        width: 238px;
-        height: 53px;
-        font-size: 1.1em;
-        font-weight: 400;
-        padding-left: 12px;
-        letter-spacing: 1px;
-      }
+    .heading-content > button {
+      margin-top: 20px;
+      width: 238px;
+      height: 53px;
+      font-size: 1.1em;
+      font-weight: 400;
+      padding-left: 12px;
+      letter-spacing: 1px;
+    }
 
-      .content-1 {
-        margin-top: 223px;
-        text-align: center;
-      }
+    .content-1 {
+      margin-top: 223px;
+      text-align: center;
+    }
 
-      .content-1 h3 {
-        padding: 0 60px 0 60px;
-      }
+    .content-1 h3 {
+      padding: 0 60px 0 60px;
+    }
 
-      .content-1 > p {
-        margin-top: 30px;
-      }
+    .content-1 > p {
+      margin-top: 30px;
+    }
 
-      .content-1 > .devices {
-        margin-top: 102px;
-      }
+    .content-1 > .devices {
+      margin-top: 102px;
+    }
 
-      .content-1 > .devices img {
-        height: 110px;
-      }
+    .content-1 > .devices img {
+      height: 110px;
+    }
 
-      .content-1 > .devices h4 {
-        margin-top: 32px;
-      }
+    .content-1 > .devices h4 {
+      margin-top: 32px;
+    }
 
-      .content-1 > .security {
-        margin-top: 112px;
-      }
+    .content-1 > .security {
+      margin-top: 112px;
+    }
 
-      .content-1 > .security img {
-        height: 120px;
-      }
+    .content-1 > .security img {
+      height: 120px;
+    }
 
-      .content-1 > .security h4 {
-        margin-top: 29px;
-      }
+    .content-1 > .security h4 {
+      margin-top: 29px;
+    }
 
-      .content-1 > .collaboration {
-        margin-top: 119px;
-      }
+    .content-1 > .collaboration {
+      margin-top: 119px;
+    }
 
-      .content-1 > .collaboration img {
-        height: 98px;
-      }
+    .content-1 > .collaboration img {
+      height: 98px;
+    }
 
-      .content-1 > .collaboration h4 {
-        margin-top: 39px;
-      }
+    .content-1 > .collaboration h4 {
+      margin-top: 39px;
+    }
 
-      .connected-apps {
-        margin-top: 296px;
-        text-align: center;
-      }
+    .connected-apps {
+      margin-top: 296px;
+      text-align: center;
+    }
 
-      .connected-apps > h3 {
-        padding: 0 30px 0 30px;
-      }
+    .connected-apps > h3 {
+      padding: 0 30px 0 30px;
+    }
 
-      .connected-apps > p {
-        margin-top: 40px;
-      }
+    .connected-apps > p {
+      margin-top: 40px;
+    }
 
-      .logo-box {
-        width: 218px;
-        height: 110px;
-        margin-left: auto;
-        margin-right: auto;
-      }
+    .logo-box {
+      width: 218px;
+      height: 110px;
+      margin-left: auto;
+      margin-right: auto;
+    }
 
-      .description-box {
-        width: 218px;
-        height: 176px;
-        margin-left: auto;
-        margin-right: auto;
-      }
+    .description-box {
+      width: 218px;
+      height: 176px;
+      margin-left: auto;
+      margin-right: auto;
+    }
 
-      .logo-box, .description-box {
-        -webkit-box-shadow: 0px 0px 22px -10px rgba(0,0,0,0.75);
-        -moz-box-shadow: 0px 0px 22px -10px rgba(0,0,0,0.75);
-        box-shadow: 0px 0px 22px -10px rgba(0,0,0,0.75);
-      }
+    .logo-box, .description-box {
+      -webkit-box-shadow: 0px 0px 22px -10px rgba(0,0,0,0.75);
+      -moz-box-shadow: 0px 0px 22px -10px rgba(0,0,0,0.75);
+      box-shadow: 0px 0px 22px -10px rgba(0,0,0,0.75);
+    }
 
-      .slack-container {
-        margin-top: 57px;
-      }
+    .slack-container {
+      margin-top: 57px;
+    }
 
-      .slack-container h3 {
-        margin-top: 3px;
-        padding-top: 10px;
-      }
+    .slack-container h3 {
+      margin-top: 3px;
+      padding-top: 10px;
+    }
 
-      .slack-container p {
-        margin-top: -8px;
-      }
+    .slack-container p {
+      margin-top: -8px;
+    }
 
-      .gsuite-container {
-        margin-top: 30px;
-      }
+    .gsuite-container {
+      margin-top: 30px;
+    }
 
-      .gsuite-container h3 {
-        margin-top: 1px;
-        padding-top: 10px;
-      }
+    .gsuite-container h3 {
+      margin-top: 1px;
+      padding-top: 10px;
+    }
 
-      .gsuite-container p {
-        margin-top: -8px;
-      }
+    .gsuite-container p {
+      margin-top: -8px;
+    }
 
-      .slack, .gsuite {
-        margin: 39px;
-        width: 56%;
-      }
+    .slack, .gsuite {
+      margin: 39px;
+      width: 56%;
+    }
 
-      .trello {
-       margin: 39px;
-       width: 53%;
-     }
+    .trello {
+      margin: 39px;
+      width: 53%;
+    }
 
-     .trello-container {
-       margin-top: 27px;
-     }
+    .trello-container {
+      margin-top: 27px;
+    }
 
-     .trello-container h3 {
-       margin-top: 1px;
-       padding-top: 10px;
-       font-size: 1.4em;
-     }
+    .trello-container h3 {
+      margin-top: 1px;
+      padding-top: 10px;
+      font-size: 1.4em;
+    }
 
-     .trello-container p {
-       margin-top: -15px;
-     }
+    .trello-container p {
+      margin-top: -15px;
+    }
 
-     .trello-container .description-box {
-       padding-bottom: 1px;
-     }
+    .trello-container .description-box {
+      padding-bottom: 1px;
+    }
 
-     .asana {
+    .asana {
       margin: 20px;
       width: 46%;
     }
 
-     .asana-container {
-       margin-top: 32px;
-     }
+    .asana-container {
+      margin-top: 32px;
+    }
 
-     .asana-container h3 {
-       margin-top: 1px;
-       padding-top: 11px;
-     }
+    .asana-container h3 {
+      margin-top: 1px;
+      padding-top: 11px;
+    }
 
-     .asana-container p {
-       margin-top: -8px;
-     }
+    .asana-container p {
+      margin-top: -8px;
+    }
 
-     .salesforce {
+    .salesforce {
       margin: 20px;
       width: 46%;
     }
 
-     .salesforce-container {
-       margin-top: 29px;
-     }
+    .salesforce-container {
+      margin-top: 29px;
+    }
 
-     .salesforce-container h3 {
-       margin-top: 1px;
-       padding-top: 11px;
-     }
+    .salesforce-container h3 {
+      margin-top: 1px;
+      padding-top: 11px;
+    }
 
-     .salesforce-container p {
-       margin-top: -8px;
-     }
+    .salesforce-container p {
+      margin-top: -8px;
+    }
 
-     .salesforce-container .description-box {
-       padding-bottom: 3px;
-     }
+    .salesforce-container .description-box {
+      padding-bottom: 3px;
+    }
 
-     .typeform {
+    .typeform {
       margin: 38px;
       width: 54%;
     }
 
-     .typeform-container {
-       margin-top: 29px;
-     }
+    .typeform-container {
+      margin-top: 29px;
+    }
 
-     .typeform-container h3 {
-       margin-top: 1px;
-       padding-top: 11px;
-     }
+    .typeform-container h3 {
+      margin-top: 1px;
+      padding-top: 11px;
+    }
 
-     .typeform-container p {
-       margin-top: -8px;
-     }
+    .typeform-container p {
+      margin-top: -8px;
+    }
 
-     .typeform-container .logo-box {
-       margin-bottom: -1px;
-     }
+    .typeform-container .logo-box {
+      margin-bottom: -1px;
+    }
 
-     .typeform-container .description-box {
-       padding-bottom: 3px;
-     }
+    .typeform-container .description-box {
+      padding-bottom: 3px;
+    }
+
+    .register-content {
+      margin-top: 125px;
+      text-align: center;
+
+    }
+
+    .register-content > p {
+      padding-top: 10px;
+    }
+
+    .register-content > button {
+      margin-top: 34px;
+      height: 53px;
+      width: 240px;
+      letter-spacing: 1.9px;
+      padding-left: 11px;
+    }
 
     .footer {
       background-color: hsl(243, 87%, 12%);
-      padding: 30px;
+      padding: 100px 22px;
+      margin-top: 58px;
       color: white;
     }
+
+    .footer > .logo {
+      width: 44%;
     }
+  }
   </style>
 </head>
 <body>
@@ -357,157 +380,157 @@
       <h1>All your files in one secure location, accessible anywhere.</h1>
 
       <p>Fylo stores all your most important files in one secure location.
-      Access them wherever you need, share and collaborate with friends,
-      family and co-workers.</p>
+        Access them wherever you need, share and collaborate with friends,
+        family and co-workers.</p>
 
-      <button>Get Started</button>
-    </div>
-
-    <div class="content-1">
-      <h3>Stay productive, wherever you are</h3>
-
-      <p>Never let location be an issue when accessing your files. Fylo has you
-      covered for all of your file storage needs.</p>
-
-      <div class="devices">
-        <img src="./images/icon-devices.svg" alt="devices">
-        <h4>All platforms, all <br/> devices, all your files</h4>
+        <button>Get Started</button>
       </div>
 
-      <div class="security">
-        <img src="./images/icon-security.svg" alt="devices">
-        <h4>Security you can trust</h4>
-      </div>
+      <div class="content-1">
+        <h3>Stay productive, wherever you are</h3>
 
-      <div class="collaboration">
-        <img src="./images/icon-collaboration.svg" alt="devices">
-        <h4>Real-time collaboration</h4>
-      </div>
-    </div>
+        <p>Never let location be an issue when accessing your files. Fylo has you
+          covered for all of your file storage needs.</p>
 
-    <div class="connected-apps">
-      <h3>Connect with the apps you use everyday</h3>
+          <div class="devices">
+            <img src="./images/icon-devices.svg" alt="devices">
+            <h4>All platforms, all <br/> devices, all your files</h4>
+          </div>
 
-      <p>Fylo seamlessly integrates with hundreds of apps, meaning you can access and
-      work on your files from the apps you already know and love.</p>
+          <div class="security">
+            <img src="./images/icon-security.svg" alt="devices">
+            <h4>Security you can trust</h4>
+          </div>
 
-      <div class="slack-container">
-        <div class="logo-box">
-          <img src="./images/logo-slack.png" alt="slack-logo" class="slack logo">
+          <div class="collaboration">
+            <img src="./images/icon-collaboration.svg" alt="devices">
+            <h4>Real-time collaboration</h4>
+          </div>
         </div>
-        <div class="description-box">
-          <h3>Slack</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque id varius eros, vel pharetra est.</p>
-        </div>
-      </div>
 
-      <div class="gsuite-container">
-        <div class="logo-box">
-          <img src="./images/logo-gsuite.png" alt="google-logo" class="gsuite logo">
-        </div>
-        <div class="description-box">
-          <h3>GSuite</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque id varius eros, vel pharetra est.</p>
-        </div>
-      </div>
+        <div class="connected-apps">
+          <h3>Connect with the apps you use everyday</h3>
 
-      <div class="trello-container">
-        <div class="logo-box">
-          <img src="./images/logo-trello.png" alt="trello-logo" class="trello logo">
-        </div>
-        <div class="description-box">
-          <h3>Trello</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque id varius eros, vel pharetra est.</p>
-        </div>
-      </div>
+          <p>Fylo seamlessly integrates with hundreds of apps, meaning you can access and
+            work on your files from the apps you already know and love.</p>
 
-      <div class="asana-container">
-        <div class="logo-box">
-          <img src="./images/logo-asana.png" alt="asana-logo" class="asana logo">
-        </div>
-        <div class="description-box">
-          <h3>Asana</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque id varius eros, vel pharetra est.</p>
-        </div>
-      </div>
+            <div class="slack-container">
+              <div class="logo-box">
+                <img src="./images/logo-slack.png" alt="slack-logo" class="slack logo">
+              </div>
+              <div class="description-box">
+                <h3>Slack</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque id varius eros, vel pharetra est.</p>
+              </div>
+            </div>
 
-      <div class="salesforce-container">
-        <div class="logo-box">
-          <img src="./images/logo-salesforce.png" alt="salesforce-logo" class="salesforce logo">
-        </div>
-        <div class="description-box">
-          <h3>Salesforce</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque id varius eros, vel pharetra est.</p>
-        </div>
-      </div>
+            <div class="gsuite-container">
+              <div class="logo-box">
+                <img src="./images/logo-gsuite.png" alt="google-logo" class="gsuite logo">
+              </div>
+              <div class="description-box">
+                <h3>GSuite</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque id varius eros, vel pharetra est.</p>
+              </div>
+            </div>
 
-      <div class="typeform-container">
-        <div class="logo-box">
-          <img src="./images/logo-typeform.png" alt="typeform-logo" class="typeform logo">
-        </div>
-        <div class="description-box">
-          <h3>Typeform</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque id varius eros, vel pharetra est.</p>
-        </div>
-      </div>
+            <div class="trello-container">
+              <div class="logo-box">
+                <img src="./images/logo-trello.png" alt="trello-logo" class="trello logo">
+              </div>
+              <div class="description-box">
+                <h3>Trello</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque id varius eros, vel pharetra est.</p>
+              </div>
+            </div>
 
-    </div>
+            <div class="asana-container">
+              <div class="logo-box">
+                <img src="./images/logo-asana.png" alt="asana-logo" class="asana logo">
+              </div>
+              <div class="description-box">
+                <h3>Asana</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque id varius eros, vel pharetra est.</p>
+              </div>
+            </div>
 
-    <div class="register-content">
-      <h3>Start using Fylo today</h3>
+            <div class="salesforce-container">
+              <div class="logo-box">
+                <img src="./images/logo-salesforce.png" alt="salesforce-logo" class="salesforce logo">
+              </div>
+              <div class="description-box">
+                <h3>Salesforce</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque id varius eros, vel pharetra est.</p>
+              </div>
+            </div>
 
-      <p>It only takes a minute to sign up and our free starter tier is extremely generous. If you have any
-      questions, our support team would be happy to help you.</p>
+            <div class="typeform-container">
+              <div class="logo-box">
+                <img src="./images/logo-typeform.png" alt="typeform-logo" class="typeform logo">
+              </div>
+              <div class="description-box">
+                <h3>Typeform</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque id varius eros, vel pharetra est.</p>
+              </div>
+            </div>
 
-      <button>Get Started</button>
-    </div>
-  </div>
+          </div>
 
-  <div class="footer">
-    <img src="./images/logo.svg" alt="logo" class="logo">
-    <p>Receive updates from us, including tips and tricks on how to improve your workflow.</p>
+          <div class="register-content">
+            <h3>Start using Fylo today</h3>
 
-    <input type="text" name="newsletter-input" id="newsletter-input">
-    <button>Join</button>
+            <p>It only takes a minute to sign up and our free starter tier is extremely generous. If you have any
+              questions, our support team would be happy to help you.</p>
 
-    <div>
-      <img src="./images/icon-phone.svg" alt="phone-icon">
-      Phone: +1-543-123-4567
-    </div>
+              <button>Get Started</button>
+            </div>
+          </div>
 
-    <div>
-        <img src="./images/icon-email.svg" alt="email-icon">
-      example@fylo.com
-    </div>
+          <div class="footer">
+            <img src="./images/logo.svg" alt="logo" class="logo">
+            <p>Receive updates from us, including tips and tricks on how to improve your workflow.</p>
 
-    <ul>
-      <li><b>Fylo</b></li>
-      <li>Desktop App</li>
-      <li>Mobile App</li>
-      <li>Pricing</li>
-      <li>Feature</li>
-    </ul>
+            <input type="text" name="newsletter-input" id="newsletter-input">
+            <button>Join</button>
 
-    <ul>
-      <li><b>Company</b></li>
-      <li>About Us</li>
-      <li>Jobs</li>
-      <li>Press</li>
-      <li>Blog</li>
-    </ul>
+            <div>
+              <img src="./images/icon-phone.svg" alt="phone-icon">
+              Phone: +1-543-123-4567
+            </div>
 
-    <ul>
-      <li><b>Support</b></li>
-      <li>Contact Us</li>
-      <li>Terms</li>
-      <li>Privacy</li>
-    </ul>
-  </div>
+            <div>
+              <img src="./images/icon-email.svg" alt="email-icon">
+              example@fylo.com
+            </div>
 
-  <footer>
-    <p class="attribution">
-      This page started life as a challenge on <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a> 🎉
-    </p>
-  </footer>
-</body>
-</html>
+            <ul>
+              <li><b>Fylo</b></li>
+              <li>Desktop App</li>
+              <li>Mobile App</li>
+              <li>Pricing</li>
+              <li>Feature</li>
+            </ul>
+
+            <ul>
+              <li><b>Company</b></li>
+              <li>About Us</li>
+              <li>Jobs</li>
+              <li>Press</li>
+              <li>Blog</li>
+            </ul>
+
+            <ul>
+              <li><b>Support</b></li>
+              <li>Contact Us</li>
+              <li>Terms</li>
+              <li>Privacy</li>
+            </ul>
+          </div>
+
+          <footer>
+            <p class="attribution">
+              This page started life as a challenge on <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a> 🎉
+            </p>
+          </footer>
+        </body>
+        </html>

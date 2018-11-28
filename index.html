@@ -22,6 +22,7 @@
 
   ul {
     list-style: none;
+    padding: 3px;
   }
 
   h1 {
@@ -31,11 +32,11 @@
     line-height: 1.1;
   }
 
-  p, li, h3, h4, .nav {
+  p, li, h3, h4, .nav, .contact-text {
     font-family: 'Open Sans', sans-serif;
   }
 
-  p {
+  p, .contact-text {
     font-weight: 400;
     color: hsl(0, 0%, 50%);
     font-size: .9em;
@@ -337,7 +338,6 @@
     .register-content {
       margin-top: 125px;
       text-align: center;
-
     }
 
     .register-content > p {
@@ -361,6 +361,69 @@
 
     .footer > .logo {
       width: 44%;
+    }
+
+    .footer-form {
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+
+    .footer-form > input {
+      width: 96%;
+      height: 22px;
+      margin-left: 2px;
+      margin-top: 8px;
+    }
+
+    .footer-form > button {
+      margin-top: 21px;
+      margin-right: 5px;
+      width: 40%;
+      height: 29px;
+      float: right;
+      justify-self: end;
+    }
+
+    .footer .contact {
+      margin-top: 41px;
+      margin-left: 6px;
+    }
+
+    .contact-text {
+      margin-bottom: 19px;
+    }
+
+    .contact-text > img {
+      margin-right: 15px;
+    }
+
+    .footer-links {
+      margin-top: 88px;
+      letter-spacing: .2px;
+    }
+
+    .footer-links li {
+      padding-top: 20.6px;
+    }
+
+    .footer-links .table-header {
+      font-size: 1.2em;
+    }
+
+    .footer-links ul.company, ul.support {
+      margin-top: 57px;
+      padding-left: 0;
+    }
+
+    ul.company > li.table-header, ul.support > li.table-header {
+      margin-bottom: 10px;
+    }
+
+    ul.company > li, ul.support > li {
+      font-size: .85em;
     }
   }
   </style>
@@ -482,7 +545,7 @@
             <p>It only takes a minute to sign up and our free starter tier is extremely generous. If you have any
               questions, our support team would be happy to help you.</p>
 
-              <button>Get Started</button>
+            <button>Get Started</button>
             </div>
           </div>
 
@@ -490,41 +553,47 @@
             <img src="./images/logo.svg" alt="logo" class="logo">
             <p>Receive updates from us, including tips and tricks on how to improve your workflow.</p>
 
-            <input type="text" name="newsletter-input" id="newsletter-input">
-            <button>Join</button>
-
-            <div>
-              <img src="./images/icon-phone.svg" alt="phone-icon">
-              Phone: +1-543-123-4567
+            <div class="footer-form">
+              <input type="text" name="newsletter-input" id="newsletter-input">
+              <button>Join</button>
             </div>
 
-            <div>
-              <img src="./images/icon-email.svg" alt="email-icon">
-              example@fylo.com
+            <div class="contact">
+              <div class="contact-text">
+                <img src="./images/icon-phone.svg" alt="phone-icon">
+                Phone: +1-543-123-4567
+              </div>
+
+              <div class="contact-text">
+                <img src="./images/icon-email.svg" alt="email-icon">
+                example@fylo.com
+              </div>
             </div>
 
-            <ul>
-              <li><b>Fylo</b></li>
-              <li>Desktop App</li>
-              <li>Mobile App</li>
-              <li>Pricing</li>
-              <li>Feature</li>
-            </ul>
+            <div class="footer-links">
+              <ul class="fylo">
+                <li class="table-header"><b>Fylo</b></li>
+                <li>Desktop App</li>
+                <li>Mobile App</li>
+                <li>Pricing</li>
+                <li>Feature</li>
+              </ul>
 
-            <ul>
-              <li><b>Company</b></li>
-              <li>About Us</li>
-              <li>Jobs</li>
-              <li>Press</li>
-              <li>Blog</li>
-            </ul>
+              <ul class="company">
+                <li class="table-header"><b>Company</b></li>
+                <li>About Us</li>
+                <li>Jobs</li>
+                <li>Press</li>
+                <li>Blog</li>
+              </ul>
 
-            <ul>
-              <li><b>Support</b></li>
-              <li>Contact Us</li>
-              <li>Terms</li>
-              <li>Privacy</li>
-            </ul>
+              <ul class="support">
+                <li class="table-header"><b>Support</b></li>
+                <li>Contact Us</li>
+                <li>Terms</li>
+                <li>Privacy</li>
+              </ul>
+            </div>
           </div>
 
           <footer>

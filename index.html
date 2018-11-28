@@ -62,87 +62,6 @@
     border-radius: 3px;
   }
 
-  .container {
-    background-image: url("./images/bg-intro-desktop.svg");
-    background-repeat: no-repeat;
-    background-position: right top;
-    background-size: 48%;
-    padding: 65px 86px;
-    display: grid;
-    grid-template-columns: 1fr;
-  }
-
-  .nav {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    align-items: center;
-  }
-
-  .nav, button {
-    color: white;
-    font-size: .9em;
-  }
-
-  .nav .sign-in {
-    grid-column: -2;
-    padding-left: 17px;
-    padding-top: 3px;
-    font-size: .9em;
-  }
-
-  .nav button {
-    grid-column: -1;
-    height: 42px;
-    width: 120px;
-    margin-right: 14px;
-  }
-
-  .nav > .logo {
-    grid-column: span 6;
-    width: 166px;
-    margin-left: 30px;
-  }
-
-  .heading-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .heading-content > .main-illustration {
-    grid-column: 2;
-    grid-row: 1;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    /* width: 72%; */
-    padding-top: 79px;
-    padding-left: 126px;
-  }
-
-  .heading-content .content  {
-    grid-column: 1;
-    grid-row: 1;
-    margin-top: 131px;
-    margin-left: 34px;
-    margin-right: 50px;
-  }
-
-  .heading-content .content h1 {
-    margin-bottom: 0;
-  }
-
-  .heading-content .content p {
-    margin-top: 24px;
-    margin-right: 20px;
-  }
-
-  .heading-content .content button {
-    margin-top: 24px;
-    width: 320px;
-    height: 73px;
-    font-size: 1.7em;
-  }
-
   .connected-apps {
     margin-top: 296px;
     text-align: center;
@@ -306,6 +225,89 @@
   .footer > .logo {
     width: 143px;
   }
+
+  @media (min-width: 991.99px) {
+    .container {
+      background-image: url("./images/bg-intro-desktop.svg");
+      background-repeat: no-repeat;
+      background-position: right top;
+      background-size: 48%;
+      padding: 65px 86px;
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+
+    .nav {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      align-items: center;
+    }
+
+    .nav, button {
+      color: white;
+      font-size: .9em;
+    }
+
+    .nav .sign-in {
+      grid-column: -2;
+      padding-left: 17px;
+      padding-top: 3px;
+      font-size: .9em;
+    }
+
+    .nav button {
+      grid-column: -1;
+      height: 42px;
+      width: 120px;
+      margin-right: 14px;
+    }
+
+    .nav > .logo {
+      grid-column: span 6;
+      width: 166px;
+      margin-left: 30px;
+    }
+
+    .heading-content {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .heading-content > .main-illustration {
+      grid-column: 2;
+      grid-row: 1;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      padding-top: 79px;
+      padding-left: 126px;
+    }
+
+    .heading-content .content  {
+      grid-column: 1;
+      grid-row: 1;
+      margin-top: 131px;
+      margin-left: 34px;
+      margin-right: 50px;
+    }
+
+    .heading-content .content h1 {
+      margin-bottom: 0;
+    }
+
+    .heading-content .content p {
+      margin-top: 24px;
+      margin-right: 20px;
+    }
+
+    .heading-content .content button {
+      margin-top: 24px;
+      width: 320px;
+      height: 73px;
+      font-size: 1.7em;
+    }
+  }
+
 
   @media (max-width: 991.98px) {
 

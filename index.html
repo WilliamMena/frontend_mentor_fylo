@@ -303,7 +303,9 @@
       margin-top: 24px;
       width: 320px;
       height: 73px;
-      font-size: 1.7em;
+      font-size: 1.5em;
+      letter-spacing: 1.4px;
+      padding-left: 10px;
     }
 
     .content-1 {
@@ -368,6 +370,71 @@
     .content-1 .collaboration h4 {
       margin-top: 37px;
       padding-left: 13px;
+    }
+
+    .connected-apps {
+      display: grid;
+      grid-template-columns: repeat(10, 1fr);
+      grid-template-rows: repeat(13, 1fr);
+      grid-gap: 10px;
+
+      margin-top: 180px;
+    }
+
+    .connected-apps h3, .connected-apps p {
+      /* grid-column: span 4; */
+      /* grid-row: span 2; */
+    }
+
+    /* .slack-container, .gsuite-container, .trello-container, .asana-container, .salesforce-container, .typeform-container {
+      grid-column: span 2;
+      grid-row: span 6;
+    } */
+
+    .connected-apps h3 {
+      grid-column: 1 / span 4;
+      grid-row: 1 / span 5;
+    }
+
+    .connected-apps p {
+      grid-column: 1 / span 4;
+      grid-row: 7 / span 5;
+    }
+
+    .logo-box, .description-box {
+      width: 237px;
+    }
+
+    .slack-container {
+      grid-column: 5 / span 2;
+      grid-row: 2 / span 6;
+      margin-top: 35px;
+    }
+
+    .gsuite-container {
+      grid-column: 7 / span 2;
+      grid-row: 1 / span 6;
+    }
+
+    .trello-container {
+      grid-column: 9 / span 2;
+      grid-row: 2 / span 6;
+      margin-top: 35px;
+    }
+
+    .asana-container {
+      grid-column: 5 / span 2;
+      grid-row: span 6;
+    }
+
+    .salesforce-container {
+      grid-column: 7 / span 2;
+      grid-row: 7 / span 6;
+    }
+
+    .typeform-container {
+      grid-column: 9 / span 2;
+      grid-row: span 6;
     }
 
   }
@@ -526,6 +593,10 @@
       font-size: 1em;
     }
 
+    /* .slack-container {
+      margin-top: 57px;
+    } */
+
     .footer-form {
       margin-left: auto;
       margin-right: auto;
@@ -589,6 +660,9 @@
       font-size: .85em;
     }
   }
+
+
+
   </style>
 </head>
 <body>
